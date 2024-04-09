@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./register.css">
+	<link rel="stylesheet" href="./margins.css">
+	<link rel="stylesheet" href="./login-register.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<title>Login</title>
+</head>
+
+<body>
+	<h1 class="text-center mt-5">Campus Threads Sign Up</h1>
+	<h3 class="text-center">Timeless Fashion</h2>
+		<div id="register-form-container" class="d-flex flex-column align-items-center">
+			<form id="register-form" class="d-flex flex-column mt-6">
+				<small id="regError" class="position-static" style="visibility: hidden;"></small>
+				<label for="email">Enter Email</label>
+				<small id="emailError" class="position-static" style="visibility: hidden;">Please enter a valid
+					Email</small>
+				<input type="text" id="email" name="email">
+				<label class="mt-4" for="username">New Username</label>
+				<small id="userError" class="position-static" style="visibility: hidden;">Please enter a
+					Username</small>
+				<input type="text" id="username" name="username">
+				<label class="mt-4" for="password">New Password</label>
+				<small id="passError" class="position-static" style="visibility: hidden;">Please enter a
+					Password</small>
+				<input type="password" id="password" name="password">
+				<label class="mt-4" for="passwordR">Reenter Password</label>
+				<small id="passRError" class="position-static" style="visibility: hidden;">Please reenter the correct
+					Password</small>
+				<input type="password" id="passwordR" name="passwordR">
+				<input class="mt-4" type="submit" id="register-button" value="Sign Up">
+				<div class="d-flex flex-column align-items-center mt-2">
+					<a href="./login.html">Login</a>
+				</div>
+			</form>
+		</div>
+		</div> <!--login-form-container-->
+		<script src="./apis.js"></script>
+		<script src="./register.js"></script>
+</body>
+
+</html>

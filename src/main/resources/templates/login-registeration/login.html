@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="./margins.css">
+  <link rel="stylesheet" href="./login-register.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <h1 class="text-center mt-5">Campus Threads Login</h1>
+  <h3 class="text-center">Timeless Fashion</h3>
+  <div id="login-form-container" class="d-flex flex-column align-items-center">
+    <form id="login-form" class="d-flex flex-column mt-6" action="" method="GET">
+
+      <small id="authError" class="position-static" style="visibility: hidden;">Invalid Username/Password</small>
+
+      <label for="username">Username</label>
+      <small id="userError" class="position-static" style="visibility: hidden;">Please enter a Username</small>
+      <input type="text" id="username" name="username">
+
+      <label class="mt-4" for="password">Password</label>
+      <small id="passError" class="position-static" style="visibility: hidden;">Please enter a Password</small>
+      <input type="password" id="password" name="password">
+
+      <input class="mt-4" type="submit" id="login-button" value="Log In">
+
+      <div class="d-flex flex-column align-items-center mt-2">
+        <a href="../homepage.html" onclick="setLocalStorage()">Continue as Guest</a>
+        <a href="./register.html" class="mt-1">Register Now</a>
+      </div>
+    </form>
+  </div>
+  </div> <!--login-form-container-->
+  <script src="./login-register-api.js"></script>
+  <script src="./login.js"></script>
+  <script src="./apis.js"></script>
+</body>
+
+</html>
